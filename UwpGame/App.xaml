@@ -1,0 +1,29 @@
+﻿<Application
+    x:Class="UwpGame.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UwpGame"
+    RequestedTheme="Light">
+    <Application.Resources>
+
+        <SolidColorBrush x:Key="BlueColor" Color="#FF35AAF7"/>
+        <SolidColorBrush x:Key="BlueColor2" Color="#FF75C8FF"/>
+        <SolidColorBrush x:Key="GrayColor" Color="#FFD8D8D8"/>
+        <SolidColorBrush x:Key="GreenColor" Color="#FF97C300"/>
+        <SolidColorBrush x:Key="WathetColor" Color="#FFA1D0FF"/>
+
+        <Style x:Key="RD_DataGridBrightStyle" TargetType="GridView">
+            <Setter Property="Foreground" Value="{StaticResource BlueColor}"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="SelectionMode" Value="Single"/>
+            <Setter Property="Background" Value="#FF47B6FF"/>
+            <Setter Property="BorderBrush" Value="#FF65B2FF" />
+            <Setter Property="BorderThickness" Value="2"/>
+          
+            
+        </Style>
+        
+    </Application.Resources>
+
+
+</Application>

@@ -1,0 +1,1 @@
+C:\zhaomin\sourcecode\UwpGame\UwpGame\UwpGame.csproj;x86
