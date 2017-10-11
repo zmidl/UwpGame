@@ -1,0 +1,74 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="UwpGame.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UwpGame"
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" x:Name="Instance">
+    <!--<Page.DataContext>
+        <local:MainPageViewModel/>
+    </Page.DataContext>-->
+    <Page.Resources>
+        <DataTemplate x:Key="ListViewItemDataTemplate">
+            <StackPanel Orientation="Horizontal">
+                <Image Height="120" Source="{Binding Photo}" Margin="20,0,0,0" Stretch="Uniform"/>
+
+                <Image Height="50" Stretch="Uniform" Margin="60,0,0,30"  VerticalAlignment="Bottom" Source="Assets/Purchased.png"/>
+                <TextBlock Foreground="{StaticResource GreenColor}" Width="160" FontSize="60" Text="{Binding Purchased}" VerticalAlignment="Bottom" Margin="20,0,0,20"/>
+
+                <Image Height="50" Stretch="Uniform" Margin="50,0,0,30" Source="Assets/CoinPlus.png" VerticalAlignment="Bottom"/>
+                <TextBlock Foreground="{StaticResource GreenColor}" Width="160" FontSize="60" Text="{Binding Price}" VerticalAlignment="Bottom" Margin="20,0,0,20"/>
+
+                <Image Height="50" Stretch="Uniform" Margin="60,0,0,30"  VerticalAlignment="Bottom" Source="Assets/CoinSubtract.png"/>
+                <TextBlock Foreground="{StaticResource GreenColor}" Width="160" FontSize="60" Text="{Binding Purchased}" VerticalAlignment="Bottom" Margin="20,0,0,20"/>
+
+                <Image Height="80" Stretch="Uniform" Margin="60,0,0,25"  VerticalAlignment="Bottom" Source="Assets/Bug.png"/>
+                <TextBlock Foreground="{StaticResource GreenColor}" Width="100" FontSize="60" Text="{Binding Purchased}" VerticalAlignment="Bottom" Margin="20,0,0,20"/>
+
+                <Image Height="65" Stretch="Uniform" Margin="60,0,0,25"  VerticalAlignment="Bottom" Source="Assets/Mouse.png"/>
+                <TextBlock Foreground="{StaticResource GreenColor}" Width="100" FontSize="60" Text="{Binding Purchased}" VerticalAlignment="Bottom" Margin="20,0,0,20"/>
+
+                <Path Height="70" Width="70" Stretch="Fill" VerticalAlignment="Bottom" Fill="{StaticResource  BlueColor}" Data="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Margin="50,0,0,20">
+                    <Interactivity:Interaction.Behaviors>
+                        <core:EventTriggerBehavior EventName="Tapped">
+                            <core:CallMethodAction TargetObject="{Binding  ViewModel,ElementName = Instance}" MethodName="_Business"/>
+                        </core:EventTriggerBehavior>
+                    </Interactivity:Interaction.Behaviors>
+                </Path>
+
+                <Path Height="70" Width="70" Stretch="Fill" VerticalAlignment="Bottom" Fill="{StaticResource GreenColor}" Data="M17,13H7V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Margin="30,0,20,20"/>
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+    <Viewbox Stretch="Fill">
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+            <Grid.RowDefinitions >
+                <RowDefinition Height="19*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="80*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Orientation="Horizontal" >
+                <Image Height="200" Margin="20,0,0,0" Stretch="Uniform" Source="Assets/Wealth.png">
+                    <Interactivity:Interaction.Behaviors>
+                        <core:EventTriggerBehavior EventName="Tapped">
+                            <core:CallMethodAction TargetObject="{Binding}" MethodName="Refresh"/>
+                        </core:EventTriggerBehavior>
+                    </Interactivity:Interaction.Behaviors>
+                </Image>
+                <Image Height="200" Margin="20,0,0,0" Stretch="Uniform" Source="Assets/Wearhouse.png"/>
+
+                <Button x:ConnectionId='4' Width="100" Height="150"                                      />
+
+            </StackPanel>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Background="{StaticResource GrayColor}">
+
+            </StackPanel>
+            <ListView x:ConnectionId='2'  Grid.Row="2"                                          ScrollViewer.HorizontalScrollMode="Auto"  ScrollViewer.VerticalScrollMode="Auto" ItemTemplate="{StaticResource ListViewItemDataTemplate}"/>
+            <ContentControl x:ConnectionId='3' x:Name="ContentControl_Navigate" Grid.Row="0" Grid.RowSpan="3" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" />
+        </Grid>
+    </Viewbox>
+</Page>
+
