@@ -5,9 +5,10 @@ using System.Linq;
 using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
+using UwpGame.Views;
 using Windows.UI.Xaml.Controls;
 
-namespace UwpGame
+namespace UwpGame.Apps
 {
     static class General
     {
@@ -18,9 +19,14 @@ namespace UwpGame
             General.mainPage = mainPage;
         }
 
-        public static void PopupDialogBox(UserControl userControl)
+        public static void NavigateForward(UserControl userControl)
         {
-            General.mainPage.AAA(userControl);
+            General.mainPage.PopupDialogBox(userControl);
+        }
+
+        public static void NavigateBack()
+        {
+            General.mainPage.PopdownDialogBox();
         }
 
         public static string JsonSerialize<T>(T entity)

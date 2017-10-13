@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using UwpGame.Apps;
+using UwpGame.ViewModels;
+using UwpGame.Views;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -30,14 +33,14 @@ namespace UwpGame
             this.DataContext = this.ViewModel;
         }
 
-        public void AAA( UserControl userControl)
+        public void PopupDialogBox(UserControl userControl)
         {
             this.ContentControl_Navigate.Content = userControl;
         }
 
-        private void Image_PointerPressed()
+        public void PopdownDialogBox()
         {
-            
+            this.ContentControl_Navigate.Content = null;
         }
     }
 }

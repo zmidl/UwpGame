@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UwpGame
+namespace UwpGame.Apps
 {
     public enum FruitName
     {
@@ -17,5 +17,11 @@ namespace UwpGame
         Pear = 6,
         Strawberry = 7,
         Tomato = 8
+    }
+
+    public enum Business
+    {
+        Purchase = 0,
+        Sale = 1
     }
 }

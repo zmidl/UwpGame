@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Input;
 
-namespace UwpGame
+namespace UwpGame.ViewModels.Common
 {
     public class RelayCommand : ICommand
     {

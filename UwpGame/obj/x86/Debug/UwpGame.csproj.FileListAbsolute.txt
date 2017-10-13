@@ -218,11 +218,6 @@ C:\zhaomin\sourcecode\UwpGame\UwpGame\bin\x86\Debug\Microsoft.Xaml.Interactivity
 C:\zhaomin\sourcecode\UwpGame\UwpGame\obj\x86\Debug\UwpGame.csproj.GenerateResource.Cache
 C:\zhaomin\sourcecode\UwpGame\UwpGame\obj\x86\Debug\Microsoft.Xaml.Interactions.pri.xml
 C:\zhaomin\sourcecode\UwpGame\UwpGame\obj\x86\Debug\Microsoft.Xaml.Interactivity.pri.xml
-C:\zhaomin\sourcecode\UwpGame\UwpGame\bin\x86\Debug\DialogBox.xbf
-C:\zhaomin\sourcecode\UwpGame\UwpGame\obj\x86\Debug\DialogBox.g.i.cs
-C:\zhaomin\sourcecode\UwpGame\UwpGame\obj\x86\Debug\DialogBox.g.cs
-C:\zhaomin\sourcecode\UwpGame\UwpGame\obj\x86\Debug\DialogBox.xaml
-C:\zhaomin\sourcecode\UwpGame\UwpGame\obj\x86\Debug\DialogBox.xbf
 D:\Develop\MyProject\UwpGame\UwpGame\UwpGame\bin\x86\Debug\App.xbf
 D:\Develop\MyProject\UwpGame\UwpGame\UwpGame\bin\x86\Debug\DialogBox.xbf
 D:\Develop\MyProject\UwpGame\UwpGame\UwpGame\bin\x86\Debug\MainPage.xbf
@@ -448,3 +443,8 @@ D:\Develop\MyProject\UwpGame\UwpGame\UwpGame\obj\x86\Debug\resources.en-us.resfi
 D:\Develop\MyProject\UwpGame\UwpGame\UwpGame\obj\x86\Debug\Microsoft.Xaml.Interactions.pri.xml
 D:\Develop\MyProject\UwpGame\UwpGame\UwpGame\obj\x86\Debug\Microsoft.Xaml.Interactivity.pri.xml
 D:\Develop\MyProject\UwpGame\UwpGame\UwpGame\obj\x86\Debug\ProjectArchitectures.txt
+C:\zhaomin\sourcecode\UwpGame\UwpGame\bin\x86\Debug\Views\BusinessView.xbf
+C:\zhaomin\sourcecode\UwpGame\UwpGame\obj\x86\Debug\Views\BusinessView.g.i.cs
+C:\zhaomin\sourcecode\UwpGame\UwpGame\obj\x86\Debug\Views\BusinessView.g.cs
+C:\zhaomin\sourcecode\UwpGame\UwpGame\obj\x86\Debug\Views\BusinessView.xaml
+C:\zhaomin\sourcecode\UwpGame\UwpGame\obj\x86\Debug\Views\BusinessView.xbf

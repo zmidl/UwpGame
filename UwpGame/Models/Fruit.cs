@@ -2,9 +2,9 @@
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Media.Imaging;
 
-namespace UwpGame
+namespace UwpGame.Models
 {
-    public class Fruit : ViewModel
+    public class Fruit
     {
         private readonly string Resources = "ms-appx:Assets/{0}.png";
 

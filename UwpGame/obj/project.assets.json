@@ -24426,20 +24426,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\zmidl\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Develop\\MyProject\\UwpGame\\UwpGame\\UwpGame\\UwpGame.csproj",
+      "projectUniqueName": "C:\\zhaomin\\sourcecode\\UwpGame\\UwpGame\\UwpGame.csproj",
       "projectName": "UwpGame",
-      "projectPath": "D:\\Develop\\MyProject\\UwpGame\\UwpGame\\UwpGame\\UwpGame.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\Develop\\MyProject\\UwpGame\\UwpGame\\UwpGame\\obj\\",
+      "projectPath": "C:\\zhaomin\\sourcecode\\UwpGame\\UwpGame\\UwpGame.csproj",
+      "packagesPath": "C:\\Users\\zmidl\\.nuget\\packages\\",
+      "outputPath": "C:\\zhaomin\\sourcecode\\UwpGame\\UwpGame\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\zmidl\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

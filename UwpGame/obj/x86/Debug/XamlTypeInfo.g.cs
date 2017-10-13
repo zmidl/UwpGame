@@ -132,43 +132,45 @@ namespace UwpGame.UwpGame_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[17];
-            _typeNameTable[0] = "UwpGame.DialogBox";
+            _typeNameTable = new string[18];
+            _typeNameTable[0] = "UwpGame.Views.BusinessView";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[2] = "Microsoft.Xaml.Interactivity.Interaction";
-            _typeNameTable[3] = "Object";
-            _typeNameTable[4] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
-            _typeNameTable[5] = "Windows.UI.Xaml.DependencyObjectCollection";
-            _typeNameTable[6] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[7] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
-            _typeNameTable[8] = "Microsoft.Xaml.Interactivity.Trigger";
-            _typeNameTable[9] = "Microsoft.Xaml.Interactivity.Behavior";
-            _typeNameTable[10] = "Microsoft.Xaml.Interactivity.ActionCollection";
-            _typeNameTable[11] = "String";
-            _typeNameTable[12] = "Microsoft.Xaml.Interactions.Core.CallMethodAction";
-            _typeNameTable[13] = "UwpGame.MainPage";
-            _typeNameTable[14] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[15] = "UwpGame.MainPageViewModel";
-            _typeNameTable[16] = "UwpGame.ViewModel";
+            _typeNameTable[2] = "UwpGame.ViewModels.BusinessViewModel";
+            _typeNameTable[3] = "UwpGame.ViewModels.Common.ViewModel";
+            _typeNameTable[4] = "Object";
+            _typeNameTable[5] = "Microsoft.Xaml.Interactivity.Interaction";
+            _typeNameTable[6] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
+            _typeNameTable[7] = "Windows.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[8] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[9] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
+            _typeNameTable[10] = "Microsoft.Xaml.Interactivity.Trigger";
+            _typeNameTable[11] = "Microsoft.Xaml.Interactivity.Behavior";
+            _typeNameTable[12] = "Microsoft.Xaml.Interactivity.ActionCollection";
+            _typeNameTable[13] = "String";
+            _typeNameTable[14] = "Microsoft.Xaml.Interactions.Core.CallMethodAction";
+            _typeNameTable[15] = "UwpGame.MainPage";
+            _typeNameTable[16] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[17] = "UwpGame.ViewModels.MainPageViewModel";
 
-            _typeTable = new global::System.Type[17];
-            _typeTable[0] = typeof(global::UwpGame.DialogBox);
+            _typeTable = new global::System.Type[18];
+            _typeTable[0] = typeof(global::UwpGame.Views.BusinessView);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[2] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
-            _typeTable[3] = typeof(global::System.Object);
-            _typeTable[4] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
-            _typeTable[5] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
-            _typeTable[6] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[7] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
-            _typeTable[8] = typeof(global::Microsoft.Xaml.Interactivity.Trigger);
-            _typeTable[9] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
-            _typeTable[10] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
-            _typeTable[11] = typeof(global::System.String);
-            _typeTable[12] = typeof(global::Microsoft.Xaml.Interactions.Core.CallMethodAction);
-            _typeTable[13] = typeof(global::UwpGame.MainPage);
-            _typeTable[14] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[15] = typeof(global::UwpGame.MainPageViewModel);
-            _typeTable[16] = typeof(global::UwpGame.ViewModel);
+            _typeTable[2] = typeof(global::UwpGame.ViewModels.BusinessViewModel);
+            _typeTable[3] = typeof(global::UwpGame.ViewModels.Common.ViewModel);
+            _typeTable[4] = typeof(global::System.Object);
+            _typeTable[5] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
+            _typeTable[6] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
+            _typeTable[7] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
+            _typeTable[8] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[9] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
+            _typeTable[10] = typeof(global::Microsoft.Xaml.Interactivity.Trigger);
+            _typeTable[11] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
+            _typeTable[12] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
+            _typeTable[13] = typeof(global::System.String);
+            _typeTable[14] = typeof(global::Microsoft.Xaml.Interactions.Core.CallMethodAction);
+            _typeTable[15] = typeof(global::UwpGame.MainPage);
+            _typeTable[16] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[17] = typeof(global::UwpGame.ViewModels.MainPageViewModel);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -203,20 +205,19 @@ namespace UwpGame.UwpGame_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_DialogBox() { return new global::UwpGame.DialogBox(); }
-        private object Activate_4_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
-        private object Activate_7_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
-        private object Activate_10_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
-        private object Activate_12_CallMethodAction() { return new global::Microsoft.Xaml.Interactions.Core.CallMethodAction(); }
-        private object Activate_13_MainPage() { return new global::UwpGame.MainPage(); }
-        private object Activate_15_MainPageViewModel() { return new global::UwpGame.MainPageViewModel(); }
-        private void VectorAdd_4_BehaviorCollection(object instance, object item)
+        private object Activate_6_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private object Activate_9_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
+        private object Activate_12_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
+        private object Activate_14_CallMethodAction() { return new global::Microsoft.Xaml.Interactions.Core.CallMethodAction(); }
+        private object Activate_15_MainPage() { return new global::UwpGame.MainPage(); }
+        private object Activate_17_MainPageViewModel() { return new global::UwpGame.ViewModels.MainPageViewModel(); }
+        private void VectorAdd_6_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_10_ActionCollection(object instance, object item)
+        private void VectorAdd_12_ActionCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
@@ -233,9 +234,9 @@ namespace UwpGame.UwpGame_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  UwpGame.DialogBox
+            case 0:   //  UwpGame.Views.BusinessView
                 userType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_0_DialogBox;
+                userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -244,93 +245,100 @@ namespace UwpGame.UwpGame_XamlTypeInfo
                 xamlType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Microsoft.Xaml.Interactivity.Interaction
+            case 2:   //  UwpGame.ViewModels.BusinessViewModel
+                userType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("UwpGame.ViewModels.Common.ViewModel"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 3:   //  UwpGame.ViewModels.Common.ViewModel
+                userType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  Object
+                xamlType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 5:   //  Microsoft.Xaml.Interactivity.Interaction
                 userType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Behaviors");
                 xamlType = userType;
                 break;
 
-            case 3:   //  Object
-                xamlType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 4:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+            case 6:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
                 userType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_4_BehaviorCollection;
+                userType.CollectionAdd = VectorAdd_6_BehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 5:   //  Windows.UI.Xaml.DependencyObjectCollection
+            case 7:   //  Windows.UI.Xaml.DependencyObjectCollection
                 xamlType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  Windows.UI.Xaml.DependencyObject
+            case 8:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 7:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
+            case 9:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
                 userType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Trigger"));
-                userType.Activator = Activate_7_EventTriggerBehavior;
+                userType.Activator = Activate_9_EventTriggerBehavior;
                 userType.SetContentPropertyName("Microsoft.Xaml.Interactivity.Trigger.Actions");
                 userType.AddMemberName("EventName");
                 userType.AddMemberName("SourceObject");
                 xamlType = userType;
                 break;
 
-            case 8:   //  Microsoft.Xaml.Interactivity.Trigger
+            case 10:   //  Microsoft.Xaml.Interactivity.Trigger
                 userType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior"));
                 userType.SetContentPropertyName("Microsoft.Xaml.Interactivity.Trigger.Actions");
                 userType.AddMemberName("Actions");
                 xamlType = userType;
                 break;
 
-            case 9:   //  Microsoft.Xaml.Interactivity.Behavior
+            case 11:   //  Microsoft.Xaml.Interactivity.Behavior
                 userType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 10:   //  Microsoft.Xaml.Interactivity.ActionCollection
+            case 12:   //  Microsoft.Xaml.Interactivity.ActionCollection
                 userType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_10_ActionCollection;
+                userType.CollectionAdd = VectorAdd_12_ActionCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 11:   //  String
+            case 13:   //  String
                 xamlType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 12:   //  Microsoft.Xaml.Interactions.Core.CallMethodAction
+            case 14:   //  Microsoft.Xaml.Interactions.Core.CallMethodAction
                 userType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_12_CallMethodAction;
+                userType.Activator = Activate_14_CallMethodAction;
                 userType.AddMemberName("TargetObject");
                 userType.AddMemberName("MethodName");
                 xamlType = userType;
                 break;
 
-            case 13:   //  UwpGame.MainPage
+            case 15:   //  UwpGame.MainPage
                 userType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_MainPage;
+                userType.Activator = Activate_15_MainPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  Windows.UI.Xaml.Controls.Page
+            case 16:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 15:   //  UwpGame.MainPageViewModel
-                userType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("UwpGame.ViewModel"));
+            case 17:   //  UwpGame.ViewModels.MainPageViewModel
+                userType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("UwpGame.ViewModels.Common.ViewModel"));
                 userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 16:   //  UwpGame.ViewModel
-                userType = new global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -339,73 +347,78 @@ namespace UwpGame.UwpGame_XamlTypeInfo
         }
 
 
-        private object get_0_Interaction_Behaviors(object instance)
+        private object get_0_BusinessView_ViewModel(object instance)
+        {
+            var that = (global::UwpGame.Views.BusinessView)instance;
+            return that.ViewModel;
+        }
+        private object get_1_Interaction_Behaviors(object instance)
         {
             return global::Microsoft.Xaml.Interactivity.Interaction.GetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_0_Interaction_Behaviors(object instance, object Value)
+        private void set_1_Interaction_Behaviors(object instance, object Value)
         {
             global::Microsoft.Xaml.Interactivity.Interaction.SetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance, (global::Microsoft.Xaml.Interactivity.BehaviorCollection)Value);
         }
-        private object get_1_Trigger_Actions(object instance)
+        private object get_2_Trigger_Actions(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactivity.Trigger)instance;
             return that.Actions;
         }
-        private object get_2_EventTriggerBehavior_EventName(object instance)
+        private object get_3_EventTriggerBehavior_EventName(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.EventName;
         }
-        private void set_2_EventTriggerBehavior_EventName(object instance, object Value)
+        private void set_3_EventTriggerBehavior_EventName(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             that.EventName = (global::System.String)Value;
         }
-        private object get_3_EventTriggerBehavior_SourceObject(object instance)
+        private object get_4_EventTriggerBehavior_SourceObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.SourceObject;
         }
-        private void set_3_EventTriggerBehavior_SourceObject(object instance, object Value)
+        private void set_4_EventTriggerBehavior_SourceObject(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             that.SourceObject = (global::System.Object)Value;
         }
-        private object get_4_Behavior_AssociatedObject(object instance)
+        private object get_5_Behavior_AssociatedObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactivity.Behavior)instance;
             return that.AssociatedObject;
         }
-        private object get_5_CallMethodAction_TargetObject(object instance)
+        private object get_6_CallMethodAction_TargetObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
             return that.TargetObject;
         }
-        private void set_5_CallMethodAction_TargetObject(object instance, object Value)
+        private void set_6_CallMethodAction_TargetObject(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
             that.TargetObject = (global::System.Object)Value;
         }
-        private object get_6_CallMethodAction_MethodName(object instance)
+        private object get_7_CallMethodAction_MethodName(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
             return that.MethodName;
         }
-        private void set_6_CallMethodAction_MethodName(object instance, object Value)
+        private void set_7_CallMethodAction_MethodName(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
             that.MethodName = (global::System.String)Value;
         }
-        private object get_7_MainPage_ViewModel(object instance)
+        private object get_8_MainPage_ViewModel(object instance)
         {
             var that = (global::UwpGame.MainPage)instance;
             return that.ViewModel;
         }
-        private void set_7_MainPage_ViewModel(object instance, object Value)
+        private void set_8_MainPage_ViewModel(object instance, object Value)
         {
             var that = (global::UwpGame.MainPage)instance;
-            that.ViewModel = (global::UwpGame.MainPageViewModel)Value;
+            that.ViewModel = (global::UwpGame.ViewModels.MainPageViewModel)Value;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -415,60 +428,66 @@ namespace UwpGame.UwpGame_XamlTypeInfo
 
             switch (longMemberName)
             {
+            case "UwpGame.Views.BusinessView.ViewModel":
+                userType = (global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("UwpGame.Views.BusinessView");
+                xamlMember = new global::UwpGame.UwpGame_XamlTypeInfo.XamlMember(this, "ViewModel", "UwpGame.ViewModels.BusinessViewModel");
+                xamlMember.Getter = get_0_BusinessView_ViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
             case "Microsoft.Xaml.Interactivity.Interaction.Behaviors":
                 userType = (global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Interaction");
                 xamlMember = new global::UwpGame.UwpGame_XamlTypeInfo.XamlMember(this, "Behaviors", "Microsoft.Xaml.Interactivity.BehaviorCollection");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_0_Interaction_Behaviors;
-                xamlMember.Setter = set_0_Interaction_Behaviors;
+                xamlMember.Getter = get_1_Interaction_Behaviors;
+                xamlMember.Setter = set_1_Interaction_Behaviors;
                 break;
             case "Microsoft.Xaml.Interactivity.Trigger.Actions":
                 userType = (global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Trigger");
                 xamlMember = new global::UwpGame.UwpGame_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_1_Trigger_Actions;
+                xamlMember.Getter = get_2_Trigger_Actions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.EventName":
                 userType = (global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::UwpGame.UwpGame_XamlTypeInfo.XamlMember(this, "EventName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_2_EventTriggerBehavior_EventName;
-                xamlMember.Setter = set_2_EventTriggerBehavior_EventName;
+                xamlMember.Getter = get_3_EventTriggerBehavior_EventName;
+                xamlMember.Setter = set_3_EventTriggerBehavior_EventName;
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.SourceObject":
                 userType = (global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::UwpGame.UwpGame_XamlTypeInfo.XamlMember(this, "SourceObject", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_3_EventTriggerBehavior_SourceObject;
-                xamlMember.Setter = set_3_EventTriggerBehavior_SourceObject;
+                xamlMember.Getter = get_4_EventTriggerBehavior_SourceObject;
+                xamlMember.Setter = set_4_EventTriggerBehavior_SourceObject;
                 break;
             case "Microsoft.Xaml.Interactivity.Behavior.AssociatedObject":
                 userType = (global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior");
                 xamlMember = new global::UwpGame.UwpGame_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_4_Behavior_AssociatedObject;
+                xamlMember.Getter = get_5_Behavior_AssociatedObject;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactions.Core.CallMethodAction.TargetObject":
                 userType = (global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.CallMethodAction");
                 xamlMember = new global::UwpGame.UwpGame_XamlTypeInfo.XamlMember(this, "TargetObject", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_5_CallMethodAction_TargetObject;
-                xamlMember.Setter = set_5_CallMethodAction_TargetObject;
+                xamlMember.Getter = get_6_CallMethodAction_TargetObject;
+                xamlMember.Setter = set_6_CallMethodAction_TargetObject;
                 break;
             case "Microsoft.Xaml.Interactions.Core.CallMethodAction.MethodName":
                 userType = (global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.CallMethodAction");
                 xamlMember = new global::UwpGame.UwpGame_XamlTypeInfo.XamlMember(this, "MethodName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_6_CallMethodAction_MethodName;
-                xamlMember.Setter = set_6_CallMethodAction_MethodName;
+                xamlMember.Getter = get_7_CallMethodAction_MethodName;
+                xamlMember.Setter = set_7_CallMethodAction_MethodName;
                 break;
             case "UwpGame.MainPage.ViewModel":
                 userType = (global::UwpGame.UwpGame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("UwpGame.MainPage");
-                xamlMember = new global::UwpGame.UwpGame_XamlTypeInfo.XamlMember(this, "ViewModel", "UwpGame.MainPageViewModel");
-                xamlMember.Getter = get_7_MainPage_ViewModel;
-                xamlMember.Setter = set_7_MainPage_ViewModel;
+                xamlMember = new global::UwpGame.UwpGame_XamlTypeInfo.XamlMember(this, "ViewModel", "UwpGame.ViewModels.MainPageViewModel");
+                xamlMember.Getter = get_8_MainPage_ViewModel;
+                xamlMember.Setter = set_8_MainPage_ViewModel;
                 break;
             }
             return xamlMember;

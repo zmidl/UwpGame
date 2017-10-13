@@ -4,12 +4,20 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UwpGame.Apps;
+using UwpGame.Models;
+using UwpGame.ViewModels.Common;
+using UwpGame.Views;
 
-namespace UwpGame
+namespace UwpGame.ViewModels
 {
     public class MainPageViewModel : ViewModel
     {
-        public RelayCommand Business { get; private set; }
+        public int Wealth { get; private set; } = 1234567;
+
+        public RelayCommand Purchase { get; private set; }
+
+        public RelayCommand Sale { get; private set; }
 
         private List<Fruit> fruits;
 
@@ -20,7 +28,8 @@ namespace UwpGame
         public MainPageViewModel()
         {
             this.Initialize();
-            this.Business = new RelayCommand(this._Business);
+            this.Purchase = new RelayCommand(this.ExecutePurchase);
+            this.Sale = new RelayCommand(this.ExecuteSale);
         }
 
         private void Initialize()
@@ -46,7 +55,7 @@ namespace UwpGame
         private ObservableCollection<Fruit> NewFrutis()
         {
             var list = this.fruits.Where(o => o.isOnSale == true);
-           
+
             return new ObservableCollection<Fruit>(list);
         }
 
@@ -71,11 +80,14 @@ namespace UwpGame
             return new Tuple<string, int, int, int>(Enum.GetName(typeof(FruitName), fruitName), minPrice, maxPrice, rarity);
         }
 
-        public void _Business()
+        public void ExecutePurchase(object parameter)
         {
-            General.PopupDialogBox(new DialogBox());
+            General.NavigateForward(new BusinessView(new Tuple<Business, Fruit>(Apps.Business.Purchase, (Fruit)parameter)));
         }
 
-       
+        public void ExecuteSale(object parameter)
+        {
+            General.NavigateForward(new BusinessView(new Tuple<Business, Fruit>(Apps.Business.Sale, (Fruit)parameter)));
+        }
     }
 }

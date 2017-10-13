@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace UwpGame
+namespace UwpGame.ViewModels.Common
 {
     public abstract class ViewModel : INotifyPropertyChanged
     {

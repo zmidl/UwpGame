@@ -1,0 +1,45 @@
+﻿<UserControl
+    x:Class="UwpGame.Views.BusinessView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UwpGame"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:vm="using:UwpGame.ViewModels"
+    d:DesignHeight="500"
+    d:DesignWidth="500">
+    <Grid Background="White">
+        <StackPanel Orientation="Vertical">
+            <Image Height="200" Source="{Binding Fruit.Photo}"/>
+            <StackPanel Orientation="Horizontal">
+                <Pivot  HeaderTemplate="{x:Null}" Height="100" Width="200" SelectedIndex="{Binding BusinessModel}" >
+                    <PivotItem Margin="0,-50,0,0" >
+                        <Image Source="ms-appx:///Assets/CoinPlus.png" />
+                    </PivotItem>
+                    <PivotItem Margin="0,-50,0,0">
+                        <Image Source="ms-appx:///Assets/CoinSubtract.png" />
+                    </PivotItem>
+                </Pivot>
+                <TextBlock Text="{Binding BusinessAmount}" Foreground="{StaticResource GreenColor}" Width="160" FontSize="60"/>
+                
+            </StackPanel>
+
+            <TextBox Foreground="{StaticResource GreenColor}" Width="160" FontSize="60"/>
+            <Button Content="完成" Foreground="{StaticResource BlueColor}" HorizontalAlignment="Stretch" FontSize="60" Command="{Binding Exit}"/>
+
+            <ToggleSwitch >
+                <ToggleSwitch.OffContent>
+                    <TextBlock Text="off" />
+                </ToggleSwitch.OffContent>
+                <ToggleSwitch.OnContent>
+                    <TextBlock Text="on" />
+                </ToggleSwitch.OnContent>
+            </ToggleSwitch>
+        </StackPanel>
+        
+        
+
+    </Grid>
+</UserControl>
+
